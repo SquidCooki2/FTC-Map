@@ -30,7 +30,7 @@ export default function App() {
   const [teams, setTeams] = useState<Team[]>([]);
 
   useEffect(() => {
-    fetch("/teams.json")
+    fetch("teams_jittered.json")
       .then((res) => res.json())
       .then((data: Team[]) => setTeams(data))
       .catch((err) => console.error("Error loading team data:", err));

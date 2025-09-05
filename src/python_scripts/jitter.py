@@ -3,9 +3,9 @@ import json
 import random
 from math import radians, cos
 
-INPUT_FILE = "public/teams.json"
-OUTPUT_FILE = "public/teams.json"
-MAX_SHIFT_METERS = 300
+INPUT_FILE = "public/teams_unjittered.json"
+OUTPUT_FILE = "public/teams_jittered.json"
+MAX_SHIFT_METERS = 100
 
 # 1 deg latitude ≈ 111,000 meters
 METER_TO_DEG = 1 / 111_000  
